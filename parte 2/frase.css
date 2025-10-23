@@ -28,8 +28,6 @@ main {
   border-radius: 25px;
   box-shadow: 2px 5px 9px red;
   padding: 15px;
-  bottom: 45%;
-  display: block;
 }
 
 .parole {
@@ -54,7 +52,7 @@ main {
 
 @keyframes show {
   0% {
-    /*  5% per transizione
+    /*  5% per transizione veloce
     28% per testo visibile (100/3 - 5% di transizione */
     margin-top: -270px;
   }
@@ -73,6 +71,7 @@ main {
   71% {
     margin-top: 0px;
   }
+  /*  99.99 per evitare lo strano effetto  */
   99.99% {
     margin-top: 0px;
   }
