@@ -1,0 +1,51 @@
+main {
+  width: 1200px;
+  height: 100vh;
+  align-items: middle;
+  justify-content: center;
+  align-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.lavagna {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: grey;
+  padding: 50px 0;
+  width: 1200px;
+}
+.post-it {
+  width: 250px;
+  height: 200px;
+  border: solid 1px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  box-shadow: 4px 4px 10px black;
+  transition: transform 1s;
+}
+.post-it h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+.yellow {
+  background-color: rgb(188, 188, 137);
+  transform: rotate(-6deg);
+}
+.green {
+  background-color: rgb(75, 127, 75);
+  transform: rotate(6deg);
+}
+.purple {
+  background-color: rgb(93, 57, 93);
+  transform: rotate(-9deg);
+}
+.post-it:hover {
+  transform: scale(1.4) translateY(-40px);
+  box-shadow: 8px 8px 20px black;
+  z-index: 10;
+}

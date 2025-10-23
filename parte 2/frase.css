@@ -54,6 +54,8 @@ main {
 
 @keyframes show {
   0% {
+    /*  5% per transizione
+    28% per testo visibile (100/3 - 5% di transizione */
     margin-top: -270px;
   }
   5% {
