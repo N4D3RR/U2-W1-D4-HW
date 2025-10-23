@@ -27,25 +27,72 @@ main {
   margin: 20px;
   box-shadow: 4px 4px 10px black;
   transition: transform 1s;
+  animation: schiaccia-post-it 2s linear;
 }
+/* animazione schiaccia differita */
+.post-it:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.post-it:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.post-it:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.post-it:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+.post-it:nth-child(5) {
+  animation-delay: 0.9s;
+}
+
+.post-it:nth-child(6) {
+  animation-delay: 1.1s;
+}
+
+.post-it:nth-child(7) {
+  animation-delay: 1.3s;
+}
+
+.post-it:nth-child(8) {
+  animation-delay: 1.5s;
+}
+
 .post-it h3 {
   font-size: 2em;
   margin-bottom: 15px;
 }
 .yellow {
-  background-color: rgb(188, 188, 137);
+  background-color: #fff980;
   transform: rotate(-6deg);
 }
 .green {
-  background-color: rgb(75, 127, 75);
+  background-color: #b3ffb3;
   transform: rotate(6deg);
 }
 .purple {
-  background-color: rgb(93, 57, 93);
+  background-color: #ccb3ff;
   transform: rotate(-9deg);
 }
 .post-it:hover {
   transform: scale(1.4) translateY(-40px);
   box-shadow: 8px 8px 20px black;
   z-index: 10;
+}
+
+/*  animazione mannagg */
+@keyframes schiaccia-post-it {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
